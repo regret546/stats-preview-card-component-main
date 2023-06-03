@@ -118,15 +118,34 @@ body {
   background-color: var(--clr--dark-desaturated-blue);
   display: grid;
   width: 1200px;
+  height: 500px;
   grid-template-columns: 1fr 1fr;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 
-.form__image img {
-  width: 600px;
+.form__image {
+  background-color: red;
+}
+
+.form__image {
+  position: relative;
+  max-width: 600px;
+  background: url("images/image-header-desktop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.form__image::after {
+  position: absolute;
+  content: "";
+  background-color: var(--clr-soft-violet);
+  inset: 0;
+  opacity: 0.6;
 }
 
 .form__info {
