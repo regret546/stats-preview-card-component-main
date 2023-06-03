@@ -13,8 +13,8 @@
   --fs--primary: 15px;
 
   /* Font Family */
-  --fm--primary: "Inter", sans-serif;
-  --fm--secodary: "Lexend Deca", sans-serif;
+  --fm--primary: "Lexend Deca", sans-serif;
+  --fm--secodary: "Inter", sans-serif;
 
   /* Font Weight */
   --fw--regular: 400;
@@ -103,7 +103,7 @@ body {
   font-family: var(--fm--primary);
   font-weight: var(--fw--regular);
   font-size: var(--fs--primary);
-  color: var(--clr--white);
+  color: var(--clr--main-paragpraph);
 }
 
 .content {
@@ -127,4 +127,29 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.form__info {
+  padding: 5rem;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  text-align: left;
+}
+
+.form__header {
+  padding-bottom: 2rem;
+  font-size: 36px;
+  font-family: var(--fm--secodary);
+  font-weight: var(--fw--bold);
+}
+
+.form__header span {
+  color: var(--clr-soft-violet);
+}
+
+.flex-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
