@@ -118,7 +118,7 @@ body {
   background-color: var(--clr--dark-desaturated-blue);
   display: grid;
   width: 1200px;
-  height: 500px;
+  height: auto;
   grid-template-columns: 1fr 1fr;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -128,7 +128,8 @@ body {
 @media (max-width: 750px) {
   .form {
     margin: 1.3rem;
-    width: 500px;
+    width: 350px;
+    height: 500px !important;
     min-height: 100vh;
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     grid-template-rows: 30% 70%;
